@@ -44,6 +44,13 @@ app.get('/about', (req, res) => {
   })
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects', {
+    pageTitle: 'Portfolio Page',
+    welcomeMessage: 'Thanks for coming! Here is a list of some of my projects that you can check out. Thanks for coming!'
+  })
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: "You don' messed up."
